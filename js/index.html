@@ -35,32 +35,31 @@
                  value = "ex: 9/25/2001"/>
           <label>Age: </label>
           <label id="age"></label>
-        </p>
-        <h3>Calculate the date of a future Birthday</h3>
-        <p>
-        <label>Number of years:</label>
-          <input type="number"
-                 id="years"
-                 value="ex: 8"/>
-          <label>Your future Birthday is on: </label>
-          <label id="nextBD"></label>
-
       </fieldset>
     </form>
   </div>
   <div>
     <h2> Do you want to play a game?</h2>
     <form>
-    <input type="checkbox"
+    <input type="radio"
            name="q1"
            value="yes"/> Yes <br>
-      <input type="checkbox"
+      <input type="radio"
              name="q2"
              value="no"/>No <br>
     </form>
-    <p>
-
-    </p>
+	</div>
+  <div hidden>
+  <h2> Guess a Number 1-15. You will have three guesses.</h2>
+	<input type="number"
+			name="guess"
+			value="ex: 10"
+	<p hidden id=win>
+	 You have guessed correctly. You win! 
+	 </p>
+	 <p hidden id=lose>
+	 You have failed.
+	 </p>
   </div>
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
